@@ -13,7 +13,7 @@ Este projeto é a solução do Danilo Barcelos e do Allann Cintra para o 2º Des
 
 Compile o programa usando makefile `> make`, ou manualmente `> g++ src/main.cpp src/random.cpp src/sa.cpp -o build/sabp`. Após isso você pode rodar o programa manualmente `> build/sabp`, digitando o caso de teste no terminal, ou usando o script "run.sh".
 
-Para usar ele, basta chamá-lo. Por padrão ele busca o executável no lugar onde o makefile compila, e os testes em `test/reduced`. Caso queira mudar onde ele busca as coisas, pode-se usar estas variáveis:
+Para usar ele, basta chamá\-lo. Por padrão ele busca o executável no lugar onde o makefile compila, e os testes em `test/reduced`. Caso queira mudar onde ele busca as coisas, pode-se usar estas variáveis:
 
 - EXEC: Caminho do executável
 - TEST_FOLDER: Caminho da pasta que contém casos de teste. Cada caso deve ser um arquivo de texto
@@ -37,7 +37,7 @@ Para usar ele, basta chamálo. Por padrão ele busca o executável no lugar onde
 
 Aqui vai um exemplo de comando para usar o script, supondo que todos os arquivos necessários estão em `C:\arquivos`:
 
-`set EXEC="C:\arquivos\prog.exe"&& set TEST_FOLDER=C:\arquivos\testes&& set SOLUTIONS_FILE=C:\arquivos\testes\Solucoes.txt&& set ARGS=i&& run.bat`
+`set EXEC="C:\arquivos\prog.exe"&& set TEST_FOLDER=C:\arquivos\testes&& set SOLUTIONS_FILE=C:\arquivos\testes\Solucoes.txt&& run.bat`
 
 Este script não procura o arquivo de soluções por padrão, mas diz quantos segundos cada caso de teste levou para ser processado. Se a saída deste script for redirecionada para um arquivo, e um arquivo de soluções foi especificado, pode-se usar o script getstats.py para obter estatísticas do teste.
 
