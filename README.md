@@ -13,7 +13,7 @@ Este projeto é a solução do Danilo Barcelos e do Allann Cintra para o 2º Des
 
 Compile o programa usando makefile `> make`, ou manualmente `> g++ src/main.cpp src/random.cpp src/sa.cpp -o build/sabp`. Após isso você pode rodar o programa manualmente `> build/sabp`, digitando o caso de teste no terminal, ou usando o script "run.sh".
 
-Para usar ele, basta chamá-lo, por padrão ele busca o executável no lugar onde o makefile compila, e os testes em `test/reduced`. Caso queira mudar onde ele busca as coisas, pode-se usar estas variáveis:
+Para usar ele, basta chamá-lo. Por padrão ele busca o executável no lugar onde o makefile compila, e os testes em `test/reduced`. Caso queira mudar onde ele busca as coisas, pode-se usar estas variáveis:
 
 - EXEC: Caminho do executável
 - TEST_FOLDER: Caminho da pasta que contém casos de teste. Cada caso deve ser um arquivo de texto
@@ -29,7 +29,7 @@ NOTA: O script bash não diz quanto tempo cada caso de teste levou
 
 Compile o programa manualmente, pois o makefile não funciona no Windows `> g++ src/main.cpp src/random.cpp src/sa.cpp -o build/sabp.exe`. Após isso você pode rodar o programa manualmente `> build\sabp.exe`, digitando o caso de teste no terminal, ou usando o script "run.bat".
 
-Para usar ele, basta chamálo, por padrão ele busca o executável no lugar onde ele estaria se o makefile funcionasse no Windows (`build\sabp.exe`), e os testes em `test\reduced`. Caso queira mudar seu comportamento, pode-se usar estas variáveis:
+Para usar ele, basta chamálo. Por padrão ele busca o executável no lugar onde ele estaria se o makefile funcionasse no Windows (`build\sabp.exe`), e os testes em `test\reduced`. Caso queira mudar seu comportamento, pode-se usar estas variáveis:
 
 - EXEC: Caminho do executável (Parece que precisa estar em aspas? Batch é estranho)
 - TEST_FOLDER: Caminho da pasta que contém casos de teste. Cada caso deve ser um arquivo de texto
