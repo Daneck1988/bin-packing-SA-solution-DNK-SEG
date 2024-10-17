@@ -2,7 +2,7 @@ arqname = input("Escreva o nome do arquivo de saída (Deve estar no formato de s
 arq = open(arqname, "r", -1, "UTF-8")
 
 caseqtd = 0
-accuracy = 1.0
+accuracy = 0.0
 timetot = 0
 largesterr = 0
 
@@ -23,7 +23,7 @@ while True:
 	timetot += extime
 	diff = progres-optires
 	if diff > largesterr: largesterr = diff
-	accuracy = (accuracy + 1 - (progres-optires)/optires)/2.0
+	accuracy += (1 - (progres-optires)/optires - accuracy)/caseqtd
 
 print("----------Statistics----------")
 print("Cases parsed...........: %d" %caseqtd)
