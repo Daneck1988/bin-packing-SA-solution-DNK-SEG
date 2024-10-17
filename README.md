@@ -33,11 +33,16 @@ Para usar ele, basta chamálo, por padrão ele busca o executável no lugar onde
 
 - EXEC: Caminho do executável (Parece que precisa estar em aspas? Batch é estranho)
 - TEST_FOLDER: Caminho da pasta que contém casos de teste. Cada caso deve ser um arquivo de texto
-- ARGS: Define os argumentos a se passar para o programa. O programa suporta 2 argumentos: i=Não imprimir informações sobre as iterações; c=Não imprimir conteúdos das caixas
 - SOLUTIONS_FILE: Caminho do arquivo de soluções
 
-Aqui vai um exemplo de comando para usar o script, supondo que todos os arquivos necessários estão em `C:\arquivos`, e que você está interessado no conteúdo das caixas, mas não nas informações sobre iterações:
+Aqui vai um exemplo de comando para usar o script, supondo que todos os arquivos necessários estão em `C:\arquivos`:
 
 `set EXEC="C:\arquivos\prog.exe"&& set TEST_FOLDER=C:\arquivos\testes&& set SOLUTIONS_FILE=C:\arquivos\testes\Solucoes.txt&& set ARGS=i&& run.bat`
 
 Este script não procura o arquivo de soluções por padrão, mas diz quantos segundos cada caso de teste levou para ser processado. Se a saída deste script for redirecionada para um arquivo, e um arquivo de soluções foi especificado, pode-se usar o script getstats.py para obter estatísticas do teste.
+
+***
+
+O programa imprime o número de caixas da melhor solução encontrada, quantas iterações foram calculadas e em qual a melhor solução foi encontrada, e os conteúdos de todas as caixas.
+
+Pode-se desabilitar a impressão das informações sobre as iterações usando o argumento `-i`, e a impressão dos conteúdos das caixas com o argumento `-c`. Todos os scripts estão programados para usar `-ic` nos argumentos, para facilitar o processamento da saída e porque essas informações adicionais são irrelevantes para o cálculo da performance do programa.
